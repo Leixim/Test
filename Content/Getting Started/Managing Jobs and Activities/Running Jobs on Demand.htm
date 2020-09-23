@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/Jobs+Alarms+and+Notifications.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Running Jobs on Demand</h1>
+        <p class="NormalWeb">Use the <span class="Strong">Dashboard</span>&#160;to start and stop jobs on demand.</p>
+        <ul class="ul_1">
+            <li class="li_1">
+                <p><a href="#Starting">Starting Jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p><a href="#Stopping">Stopping Jobs</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Starting"></a>Starting Jobs</h2>
+        <p>To start a job, follow the steps below:</p>
+        <ol>
+            <li>Go to the <span class="Strong">Dashboard</span>, select the job from the list of jobs, and click&#160;<span class="Strong">Run Job.</span></li>
+            <li>
+                <p>In the dialog that opens, define the scope of your job: </p>
+                <ol>
+                    <li>Choose one of the following options:<ul><li><p><b>Run for all VMs/backups/physical machines</b>: The job will run for all VMs/backups/physical machines.</p></li><li><p><b>Run for selected VM/backups/physical machines</b>: The job will run for the VMs/backups/physical machines you select.</p></li><li><p><b>Run for failed VMs/backups/physical machines</b>: The job will run for previously failed VMs/backups/physical servers&#160;only.</p></li></ul></li>
+                    <li>
+                        <p>If the type of the backup repository for your job is&#160;incremental with full backups,&#160;you will have to choose between the following backup types: </p>
+                        <ul>
+                            <li>
+                                <p><b>Incremental</b>: Your job will create an incremental backup.</p>
+                            </li>
+                            <li>
+                                <p><b>Full</b>: Your job will create a full backup. If you choose this option, please choose the full backup mode:</p>
+                                <ul>
+                                    <li>
+                                        <p><b>Synthetic full</b>: The application will first perform an incremental backup – that is, will transfer only the VM data that changed since the last backup, – and will then transform the available data into a full backup.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Active full</b>: Will read all source VM data and transfer it to the backup repository.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Click the <b>Run</b> button to confirm your operation. The product will close the dialog box and start running your job.<br /><br /><br /><img src="../../Resources/Images/Running+Jobs+on+Demand/Running Jobs on Demand.png" class="img_17" /><br /></p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <p class="NormalWeb">&#160;</p>
+        <h2><a name="Stopping"></a>Stopping Jobs</h2>
+        <p>To stop a job that is currently running, follow the steps below:<br /></p>
+        <p>&#160;</p>
+        <ol>
+            <li>Go to the <b>Dashboard</b>, select the job from the list of jobs, and click&#160;<b>Stop Job</b>.</li>
+            <li>In the dialog that opens, choose either of the following:<ul><li><b>Stop for all VMs/backups/physical servers</b>: Your job will stop for all VMs/backups/physical servers.</li></ul><ul><li><b>Stop for selected VMs/backups/physical servers</b>: Your job will stop for the jobs you select.</li></ul></li>
+            <li>Click the&#160;<b>Stop</b>&#160;button in the dialog to confirm your operation. The product will close the dialog box and stop your job.<br /><br /><img src="../../Resources/Images/Running+Jobs+on+Demand/Running Jobs on Demand_1.png" class="img_17" /></li>
+        </ol>
+        <p>
+            <br />
+            <br />
+        </p>
+        <p>
+            <br />
+            <br />
+        </p>
+        <p class="NormalWeb">&#160;</p>
+        <p class="NormalWeb">&#160;</p>
+    </body>
+</html>

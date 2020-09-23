@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/Jobs+Alarms+and+Notifications.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Managing Job Policies</h1>
+        <ul>
+            <li><a href="#Saving">Saving Job Policy</a>
+            </li>
+            <li><a href="#Editing">Editing Job Policy
+</a>
+            </li>
+            <li><a href="#Removing">Removing Job Policy</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>With policies, you can create rules that easily add matching items to NAKIVO Backup &amp; Replication jobs. For example, you can create a backup job that meets the following criteria: (a) size of VM is more than 4 GB, (b) number of VM CPU sockets is more than 2, and (c) VM name contains "Ubuntu". Any policy is applied to a single job. In the&#160;NAKIVO Backup &amp; Replication job wizard, job policy is accessible from the <span class="Strong">Policy</span> view of the VMs / Instances / Backup page.</p>
+        <p class="NormalWeb">
+            <img src="../../Resources/Images/Managing+Job+Policies/Managing Job Policies.jpg" class="img_8" />
+        </p>
+        <p>Every job policy contains at least one rule. Refer to <a href="Managing Policy Rules.htm" class="Hyperlink">Managing Policy Rules</a> for details.</p>
+        <p class="NormalWeb">Job policies are available for the following job types:</p>
+        <ul class="ul_1">
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../../../display/NH/Backup" class="Hyperlink">Backup jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../../../display/NH/Replication" class="Hyperlink">Replication jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../../../display/NH/Creating+Backup+Copy+Jobs" class="Hyperlink">Backup copy jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../../../display/NH/Planning+Disaster+Recovery" class="Hyperlink">Failover jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../../../display/NH/Planning+Disaster+Recovery" class="Hyperlink">Failback jobs</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1">Several actions of the <a href="../../../../../../../../display/NH/Site+Recovery" class="Hyperlink">Site Recovery</a> job</p>
+            </li>
+        </ul>
+        <p class="NormalWeb">Learn how to save, edit, and remove job policies in these sections:</p>
+        <ul class="ul_1">
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../Downloads/Managing+Job+Policies.doc#ManagingJobPolicies-SavingJobPolicy" class="Hyperlink">Saving Job Policy</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../Downloads/Managing+Job+Policies.doc#ManagingJobPolicies-EditingJobPolicy" class="Hyperlink">Editing Job Policy</a>
+                </p>
+            </li>
+            <li class="li_1">
+                <p class="p_1"><a href="../../../../../../Downloads/Managing+Job+Policies.doc#ManagingJobPolicies-RemovingJobPolicy" class="Hyperlink">Removing Job Policy</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="Saving"></a>Saving Job Policy</h2>
+        <p class="NormalWeb">Follow the steps below to save a policy rule:</p>
+        <ol>
+            <li>Make sure your job is opened in the <span class="Strong">Policy&#160;</span>view.</li>
+            <li>Choose either of the following <span class="Strong">Condition</span> for your job policy: <ul><li><span class="Strong">Include items if ALL rules are matched</span>: If selected, the logical AND will be applied to the set of policy rules.</li><li><span class="Strong">Include items if ANY rule is matched</span>:<span class="Strong">&#160;</span>If selected, the logical OR will be applied to the set of policy rules.</li></ul></li>
+            <li>Provide the necessary policy rules. Refer to <a href="Managing Policy Rules.htm" class="Hyperlink">Managing Policy Rules</a> for details. Make sure that at least one item matches the available set of policy rules.</li>
+            <li>Save your job.<br /><br /><img src="../../Resources/Images/Managing+Job+Policies/Managing Job Policies.png" class="img_9" /></li>
+        </ol>
+        <h2><a name="Editing"></a>Editing Job Policy</h2>
+        <ol>
+            <li>Follow the steps below to edit a job policy:</li>
+            <li>Make sure your job is opened in the <span class="Strong">Policy</span> view.</li>
+            <li>Change the necessary parameters of your job policy: <ul><li><span class="Strong">Condition</span>.</li></ul><ul><li>Add, edit or delete policy rules. Refer to <a href="Managing Policy Rules.htm" class="Hyperlink">Managing Policy Rules</a> for details.</li></ul></li>
+            <li>Save your job.</li>
+        </ol>
+        <h2><a name="Removing"></a>Removing Job Policy</h2>
+        <p class="NormalWeb">Follow the steps below to remove an entire job policy:</p>
+        <ol>
+            <li>Make sure your job is opened in the <span class="Strong">Policy</span> view.</li>
+            <li>Switch to any other inventory view available on the list.</li>
+            <li>A dialog opens warning you that switching to a different view will reset your selection for the current job. Click <span class="Strong">Switch View</span> to confirm your operation.</li>
+            <li>Save your job.<br /><br /><img src="../../Resources/Images/Managing+Job+Policies/Managing Job Policies_1.png" class="img_10" /></li>
+        </ol>
+        <p class="NormalWeb">&#160;</p>
+        <p class="NormalWeb">&#160;</p>
+        <p class="NormalWeb">&#160;</p>
+        <p class="NormalWeb">&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/Jobs+Alarms+and+Notifications.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Managing Policy Rules</h1>
+        <p>Policy rules are an integral part of <a href="../../../../../../../../display/NH/Managing+Job+Policies" class="Hyperlink">job policies</a>. Refer to the following sections for details:</p>
+        <ul>
+            <li><a href="#About">About Policy Rules</a>
+            </li>
+            <li><a href="#Editing">Editing Policy Rule</a>
+            </li>
+            <li><a href="#Adding">Adding Policy Rule</a>
+            </li>
+            <li><a href="#Removing">Removing Policy Rule</a>
+            </li>
+        </ul>
+        <h2><a name="About"></a>About Policy Rules</h2>
+        <p>In the <span class="Strong">Policy</span> view of the inventory tree, policy rules are numbered by NAKIVO Backup &amp; Replication for your convenience.</p>
+        <p class="NormalWeb">Every policy rule contains the following options:</p>
+        <ol>
+            <li><span class="Strong">Search by</span>: A drop-down list with the following search criteria: <ul><li><p><b>VM name / Instance name / Backup name</b>: The rule is to be applied based on the name of the object.</p></li><li><p><b>VM tag / Instance tag</b>: The rule is to be applied based on the tag of the object.</p></li><li><p><b>VM location / Instance location</b>:&#160;The rule is to be applied based on the location of the object.</p></li><li><p><b>Name of VM datastore / VM Path</b>:&#160;The rule is to be applied based on the name of the VM datastore or the VM path.</p></li><li><p><b>Name of VM network / Name of Subnet</b>:&#160;The rule is to be applied based on the name of the VM network or instance network.</p></li><li><p><b>Size of VM / Size of instance</b>:&#160;The rule is to be applied based on the size of the object.</p></li><li><p><b>Amount of VM/Instance RAM</b>:&#160;The rule is to be applied based on the amount of VM/Instance RAM.</p></li><li><p><b>Number of VM CPU sockets / Number of VM processors / Number of Instance virtual CPUs</b>:&#160;The rule is to be applied based on the number of VM CPU sockets, VM processors, or Instance virtual CPUs correspondingly.</p></li></ul></li>
+        </ol>
+        <p class="title" style="font-weight: bold;">Note</p>
+        <p>The criteria are available as follows:</p>
+        <ul>
+            <li><span class="Strong">Number of VM CPU sockets</span>: This is for your VMware backup and replication jobs.</li>
+            <li><span class="Strong">Number of VM processors</span>: This is for your Hyper-V backup and replication jobs.</li>
+            <li><span class="Strong">Number of instance virtual CPUs</span>: This is for your Amazon EC2 backup and replication jobs.<ul><li><p><b>VM power state / Instance power state</b>:&#160;The rule is to be applied based on the power state of the object.</p></li><li><p><b>IP Address</b>:&#160;The rule is to be applied based on the IP address of the object.</p></li></ul><p><br /> <img src="../../Resources/Images/Managing+Policy+Rules/Managing Policy Rules.png" class="img_16" /></p></li>
+        </ul>
+        <p>2. <b>Search parameter</b>: You can choose either of the following:</p>
+        <ol style="list-style-type: lower-alpha;">
+            <li style="font-weight: bold;">For VM name / Instance name / Backup name, Name of VM network / Name of subnet, Name of VM datastore / VM Path, VM tag / Instance tag, and IP Address:<ul><li><p>Contains</p></li><li><p>Does not Contain</p></li><li><p>Equals (<span style="font-weight: normal;">always applied for the</span> VM tag)</p></li><li><p>Does not equal</p></li><li><p>Starts with</p></li><li><p>Ends with</p></li></ul></li>
+            <li>
+                <p><b>For Amount of VM/Instance RAM, Number of VM CPU sockets / Number of VM processors / Number of Instance virtual CPUs, and Size of VM / Size of Instance</b>, you can choose any of the following search parameters:</p>
+                <ul>
+                    <li>
+                        <p>Is more than</p>
+                    </li>
+                    <li>
+                        <p>Is less than</p>
+                    </li>
+                    <li>
+                        <p>Equals</p>
+                    </li>
+                    <li>
+                        <p>Does not equal</p>
+                    </li>
+                    <li>
+                        <p>For VM Power State / Instance power state and VM Location / Instance location:</p>
+                    </li>
+                    <li>
+                        <p>Is</p>
+                    </li>
+                    <li>
+                        <p>Is not</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            <br />
+        </p>
+        <h2><a name="Editing"></a>Editing Policy Rule</h2>
+        <p class="NormalWeb">Follow the steps below to edit a policy rule:</p>
+        <ol>
+            <li>Make sure your job is opened in the<span class="Strong"> Policy </span>view.</li>
+            <li>Locate your policy rule in the left pane of the view. If necessary, use the scroll bar.</li>
+            <li>Change the necessary parameters of your policy rule. Make sure that at least one item matches an available set of policy rules.</li>
+            <li>Click <span class="Strong">Next</span>.</li>
+        </ol>
+        <h2><a name="Adding"></a>Adding Policy Rule</h2>
+        <p>Follow the steps below to add a policy rule:</p>
+        <ol>
+            <li>Make sure your job is opened in the <span class="Strong">Policy</span> view.</li>
+            <li>In the left pane of the wizard, click <span class="Strong">Add another rule</span>.</li>
+            <li>The wizard displays a new policy rule, <span class="Emphasis">Rule #N</span>. Provide the necessary parameters of your policy rule. Make sure that at least one item matches the available set of policy rules.</li>
+            <li>Click <span class="Strong">Next</span> when all parameters are set.</li>
+        </ol>
+        <p class="NormalWeb">
+            <img src="../../Resources/Images/Managing+Policy+Rules/Managing Policy Rules_2.png" class="img_16" />
+        </p>
+        <h2><a name="Removing"></a>Removing Policy Rule</h2>
+        <p>Follow the steps below to remove a policy rule:</p>
+        <ol>
+            <li>Make sure your job is opened in the <span class="Strong">Policy</span> view.</li>
+            <li>Locate your policy rule in the left pane of the view. If necessary, use the scroll bar.</li>
+            <li>Click <span class="Strong">Remove</span>.</li>
+            <li>Click <span class="Strong">Next</span> when all parameters are set.<br /><br /><img src="../../Resources/Images/Managing+Policy+Rules/Managing Policy Rules_3.png" class="img_16" /></li>
+        </ol>
+        <p class="NormalWeb">&#160;</p>
+        <p class="title"><b>Note</b>
+        </p>
+        <p>You cannot remove all policy rules. A job policy must have at least one rule.</p>
+    </body>
+</html>
